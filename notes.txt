@@ -1,0 +1,22 @@
+Go notes basics
+
+1. Go is a statically typed language, hence types must be declared beforehand
+2. Types can be inferred based on initial value or manually set
+    a. var x string = "I am a string"
+    b. x:="I am a string"
+3. The types once declared cannot be changed
+4. The basic types in Go are bool, string, var, float64
+5. Functions in go use similar syntax as JS and are declared using "func"
+    a. func printMessage(var_name var_type) return_type {
+        return var_name
+    }
+6. Every single value that is used in Go has to have it's type defined somewhere
+7. Go has 2 types of arrays - slices and arrays
+    a. slices are array with a variable size
+        i. arr:=[]int{1,2,3}
+        ii. arr=append(arr,5);
+    b. Arrays are fixed sized data structures
+8. Arrays and slices in go can hold only one types of data
+9. Loops in Go also uses for-loop in the following 2 ways
+    a. for index,value:= range array_name (for each loop)
+    b. for i:=0;i<n;i++ (traditional loop)
