@@ -1,6 +1,5 @@
 package main
 
-import "fmt"
 
 func initializeCard () string {
 	return "functionCalled"
@@ -8,10 +7,11 @@ func initializeCard () string {
 
 func main(){
 	
-	cards:=[]string{"1"}
+	cards:=deck{"Ace of clubs"}
 
 	
-	cards=append(cards,"2")
+	cards=append(cards,"Jack of diamonds")
+	cards=append(cards,"Jack of spades")
 
-	fmt.Println(cards)
+	cards.print(5)
 }

@@ -5,7 +5,7 @@ Go notes basics
     a. var x string = "I am a string"
     b. x:="I am a string"
 3. The types once declared cannot be changed
-4. The basic types in Go are bool, string, var, float64
+4. The basic types in Go are bool, string, var, float64, array, vector
 5. Functions in go use similar syntax as JS and are declared using "func"
     a. func printMessage(var_name var_type) return_type {
         return var_name
@@ -20,3 +20,11 @@ Go notes basics
 9. Loops in Go also uses for-loop in the following 2 ways
     a. for index,value:= range array_name (for each loop)
     b. for i:=0;i<n;i++ (traditional loop)
+10. Go does not support OOPs and classes
+11. Go does have custom data types that can also have methods
+    a. type deck []int - this is a custom data type which is like a subclass of slice of int
+    b. this allows us to add custom methods to it
+12. When a custom type is in any other file, there is not need to import anything, if they are in same package.
+13. When using custom data types, both of the files need to be run (go run main.go deck.go)
+14. For methods to use custom types they need to be defined in the following ways
+    a. func (d deck) func_name()
